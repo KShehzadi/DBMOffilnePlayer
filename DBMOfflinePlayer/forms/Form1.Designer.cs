@@ -28,17 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_dashboard = new System.Windows.Forms.Button();
-            this.btn_contactus = new System.Windows.Forms.Button();
-            this.btn_about = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.btn_about = new System.Windows.Forms.Button();
+            this.btn_contactus = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -56,7 +63,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_about);
             this.panel1.Controls.Add(this.btn_contactus);
             this.panel1.Controls.Add(this.btn_dashboard);
@@ -65,72 +75,129 @@
             this.panel1.Size = new System.Drawing.Size(200, 401);
             this.panel1.TabIndex = 1;
             // 
-            // btn_dashboard
+            // panel2
             // 
-            this.btn_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_dashboard.Location = new System.Drawing.Point(6, 95);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(188, 76);
-            this.btn_dashboard.TabIndex = 0;
-            this.btn_dashboard.Text = "Dashboard";
-            this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.btn_Exit);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.ForeColor = System.Drawing.Color.Snow;
+            this.panel2.Location = new System.Drawing.Point(199, -3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(831, 401);
+            this.panel2.TabIndex = 5;
             // 
-            // btn_contactus
+            // panel3
             // 
-            this.btn_contactus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_contactus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_contactus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_contactus.Location = new System.Drawing.Point(6, 177);
-            this.btn_contactus.Name = "btn_contactus";
-            this.btn_contactus.Size = new System.Drawing.Size(188, 76);
-            this.btn_contactus.TabIndex = 2;
-            this.btn_contactus.Text = "Contact us";
-            this.btn_contactus.UseVisualStyleBackColor = false;
+            this.panel3.BackColor = System.Drawing.Color.Yellow;
+            this.panel3.Location = new System.Drawing.Point(-10, -1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(841, 10);
+            this.panel3.TabIndex = 5;
             // 
-            // btn_about
+            // panel4
             // 
-            this.btn_about.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_about.Location = new System.Drawing.Point(6, 259);
-            this.btn_about.Name = "btn_about";
-            this.btn_about.Size = new System.Drawing.Size(188, 76);
-            this.btn_about.TabIndex = 2;
-            this.btn_about.Text = "About";
-            this.btn_about.UseVisualStyleBackColor = false;
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Location = new System.Drawing.Point(18, 9);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(101, 100);
+            this.panel4.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(64, 146);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Dashboard";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(64, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Contact us";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(78, 335);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "About";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = global::DBMOfflinePlayer.Properties.Resources.DBM_Logo_Black_;
-            this.pictureBox2.Location = new System.Drawing.Point(37, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(95, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // panel2
+            // btn_Exit
             // 
-            this.panel2.BackColor = System.Drawing.Color.Snow;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.ForeColor = System.Drawing.Color.Snow;
-            this.panel2.Location = new System.Drawing.Point(199, -3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(827, 401);
-            this.panel2.TabIndex = 5;
+            this.btn_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
+            this.btn_Exit.Location = new System.Drawing.Point(756, 11);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(67, 43);
+            this.btn_Exit.TabIndex = 5;
+            this.btn_Exit.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // btn_about
             // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Location = new System.Drawing.Point(-10, -1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(835, 22);
-            this.panel3.TabIndex = 5;
+            this.btn_about.BackColor = System.Drawing.Color.Transparent;
+            this.btn_about.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.information_icon_white_4;
+            this.btn_about.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_about.Location = new System.Drawing.Point(57, 279);
+            this.btn_about.Name = "btn_about";
+            this.btn_about.Size = new System.Drawing.Size(76, 53);
+            this.btn_about.TabIndex = 2;
+            this.btn_about.UseVisualStyleBackColor = false;
+            // 
+            // btn_contactus
+            // 
+            this.btn_contactus.BackColor = System.Drawing.Color.Transparent;
+            this.btn_contactus.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.icon_call_center;
+            this.btn_contactus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_contactus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_contactus.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_contactus.Location = new System.Drawing.Point(57, 177);
+            this.btn_contactus.Name = "btn_contactus";
+            this.btn_contactus.Size = new System.Drawing.Size(76, 63);
+            this.btn_contactus.TabIndex = 2;
+            this.btn_contactus.UseVisualStyleBackColor = false;
+            // 
+            // btn_dashboard
+            // 
+            this.btn_dashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btn_dashboard.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.house_1_featured_2;
+            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_dashboard.Location = new System.Drawing.Point(57, 87);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(76, 56);
+            this.btn_dashboard.TabIndex = 0;
+            this.btn_dashboard.Text = "\r\n";
+            this.btn_dashboard.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -147,8 +214,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -163,6 +232,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

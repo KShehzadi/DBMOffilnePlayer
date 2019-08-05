@@ -64,6 +64,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\contact.Designer.cs">
+      <DependentUpon>contact.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,20 @@
     </Content>
     <None Include="Resources\3726cf14-d582-4285-86de-cf0abb476235.png" />
     <None Include="Resources\DBM Logo%28Black%29.png" />
+    <None Include="Resources\arrow-back-512.png" />
+    <None Include="Resources\84942149-go-back-icon.jpg" />
+    <None Include="Resources\84942149-go-back-icon1.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\84942149-stock-vector-go-back-icon.jpg" />
+    <None Include="Resources\17448.jpg" />
+    <None Include="Resources\house-1-featured-2.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\398-3985101_pinterest-icon-white-png-for-kids-telefone-white.png" />
+    <None Include="Resources\it-support-helpdesk-19-512.png" />
+    <None Include="Resources\icon-call-center.png" />
+    <None Include="Resources\information-icon-white-4.jpg" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
