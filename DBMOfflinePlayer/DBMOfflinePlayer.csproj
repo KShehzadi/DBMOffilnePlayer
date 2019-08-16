@@ -70,6 +70,12 @@
     <Compile Include="forms\about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\AuthenticationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AuthenticationForm.Designer.cs">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\contact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,15 @@
     <Compile Include="classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="classes\utility.cs" />
+    <EmbeddedResource Include="forms\about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AuthenticationForm.resx">
+      <DependentUpon>AuthenticationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\contact.resx">
+      <DependentUpon>contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,18 +137,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="concrt140.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="cvextern.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="msvcp140.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="opencv_ffmpeg410.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\3726cf14-d582-4285-86de-cf0abb476235.png" />
     <None Include="Resources\DBM Logo%28Black%29.png" />
     <None Include="Resources\arrow-back-512.png" />
@@ -150,6 +153,30 @@
     <None Include="Resources\it-support-helpdesk-19-512.png" />
     <None Include="Resources\icon-call-center.png" />
     <None Include="Resources\information-icon-white-4.jpg" />
+    <None Include="Resources\DBM Logo%28White%29.png" />
+    <None Include="Resources\Industry-Return-icon.png" />
+    <None Include="Resources\Industry-Return-icon1.png" />
+    <None Include="Resources\Media-Controls-Play-icon.png" />
+    <None Include="Resources\Media-Controls-Play-icon1.png" />
+    <None Include="Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343.png" />
+    <None Include="Resources\Marker.png" />
+    <None Include="Resources\Media-Controls-Repeat-icon.png" />
+    <None Include="Resources\pause-icon.png" />
+    <None Include="Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.93581638153072564693431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="concrt140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cvextern.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="msvcp140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_ffmpeg410.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -143,6 +143,16 @@ namespace DBMOfflinePlayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DBM_Logo_White_ {
+            get {
+                object obj = ResourceManager.GetObject("DBM Logo(White)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -203,6 +213,26 @@ namespace DBMOfflinePlayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Industry_Return_icon {
+            get {
+                object obj = ResourceManager.GetObject("Industry-Return-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Industry_Return_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Industry-Return-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap information_icon_white_4 {
             get {
                 object obj = ResourceManager.GetObject("information-icon-white-4", resourceCulture);
@@ -216,6 +246,77 @@ namespace DBMOfflinePlayer.Properties {
         internal static System.Drawing.Bitmap it_support_helpdesk_19_512 {
             get {
                 object obj = ResourceManager.GetObject("it-support-helpdesk-19-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_home_button_sign_haus_und_familienpfleger_5b3d050ee41990_9358163815307256469343 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9" +
+                        "358163815307256469343", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_home_button_sign_haus_und_familienpfleger_5b3d050ee419901 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee419901", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Marker {
+            get {
+                object obj = ResourceManager.GetObject("Marker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media_Controls_Play_icon {
+            get {
+                object obj = ResourceManager.GetObject("Media-Controls-Play-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media_Controls_Play_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Media-Controls-Play-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media_Controls_Repeat_icon {
+            get {
+                object obj = ResourceManager.GetObject("Media-Controls-Repeat-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pause_icon {
+            get {
+                object obj = ResourceManager.GetObject("pause-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

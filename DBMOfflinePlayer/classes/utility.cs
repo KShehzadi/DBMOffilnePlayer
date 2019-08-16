@@ -14,6 +14,8 @@ using System.IO;
 using System.Threading;
 using WMPLib;
 using Newtonsoft;
+using System.Net.Http;
+
 namespace DBMOfflinePlayer
 {
     class utility
@@ -23,6 +25,23 @@ namespace DBMOfflinePlayer
         public static void startstopwatch()
         {
             time.Start();
+        }
+        public static void pausevideo()
+        {
+            thread1.Suspend();
+            thread2.Suspend();
+        }
+        public static void startpausedvideo(ref ImageBox imgbox)
+        {
+            dest = imgbox;
+            thread1 = new Thread(utility.playaudiofile);
+            thread2 = new Thread(utility.ReadandDrawFromFile);
+            thread1.Start();
+            thread2.Start();
+        }
+        public static void startover(ref ImageBox imgbox)
+        {
+            utility.ReadandDrawFromFileCall(ref imgbox);
         }
         public static void playaudiofile()
         {
@@ -91,6 +110,8 @@ namespace DBMOfflinePlayer
         public static void ReadandDrawFromFileCall(ref ImageBox imgbox)
         {
             dest = imgbox;
+            utility.previous = new Point(0, 0);
+            utility.previous1 = new Point(0, 0);
             if (thread1.ThreadState == System.Threading.ThreadState.Aborted && thread2.ThreadState == System.Threading.ThreadState.Aborted)
             {
                 thread1 = new Thread(utility.playaudiofile);
@@ -121,7 +142,7 @@ namespace DBMOfflinePlayer
 
         }
         public static Stopwatch readtime = new Stopwatch();
-        public static string filepath;
+        //public static string filepath;
         public static string fileName = @"C:\Users\Dc\Desktop\komal.json";
         public static void ReadandDrawFromFile()
         {
@@ -182,6 +203,28 @@ namespace DBMOfflinePlayer
             {
 
             }
+        }
+        public static HttpResponseMessage authstr;
+        public static async void authenticate(string username, string password)
+        {
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost:64354");
+            var request = new HttpRequestMessage(HttpMethod.Post, "/Token");
+
+            var keyValues = new List<KeyValuePair<string, string>>();
+            keyValues.Add(new KeyValuePair<string, string>("username", username));
+            keyValues.Add(new KeyValuePair<string, string>("password", password));
+            keyValues.Add(new KeyValuePair<string, string>("grant_type", "password"));
+
+            request.Content = new FormUrlEncodedContent(keyValues);
+            utility.authstr = (await client.SendAsync(request));
+            var authstring = "error";
+            if (utility.authstr != null)
+            {
+                authstring = utility.authstr.ToString();
+            }
+            Console.WriteLine(authstring);
+            MessageBox.Show(authstring.ToString());
         }
     }
 }

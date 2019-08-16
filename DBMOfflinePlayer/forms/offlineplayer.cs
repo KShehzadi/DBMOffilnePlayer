@@ -27,12 +27,39 @@ namespace DBMOfflinePlayer.forms
 
         private void btn_play_Click(object sender, EventArgs e)
         {
+            btn_pause.Enabled = true;
+            btn_play.Enabled = false;
             utility.ReadandDrawFromFileCall(ref imageBoxplayer);
+            btn_play.Enabled = true;
         }
 
         private void offlineplayer_Load(object sender, EventArgs e)
         {
-            
+            btn_pause.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            btn_pause.Enabled = true;
+            btn_play.Enabled = false;
+            utility.startover(ref imageBoxplayer);
+            btn_play.Enabled = true;
+        }
+
+        private void btn_pause_Click(object sender, EventArgs e)
+        {
+            btn_play.Enabled = false;
+            if(btn_pause.Text.ToLower() == "pause")
+            {
+                btn_pause.Text = "Resume";
+                utility.pausevideo();
+            }
+            else if(btn_pause.Text.ToLower() == "resume")
+            {
+                btn_pause.Text = "Pause";
+                utility.startpausedvideo(ref imageBoxplayer);
+            }
+
         }
     }
 }
