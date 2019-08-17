@@ -39,13 +39,13 @@
             this.btn_contactus = new System.Windows.Forms.Button();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_authenticate = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Exit = new System.Windows.Forms.Button();
-            this.btn_authenticate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -191,10 +191,25 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.Color.Snow;
-            this.panel2.Location = new System.Drawing.Point(199, 0);
+            this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(825, 497);
+            this.panel2.Size = new System.Drawing.Size(830, 497);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btn_authenticate
+            // 
+            this.btn_authenticate.BackColor = System.Drawing.Color.Gray;
+            this.btn_authenticate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_authenticate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_authenticate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_authenticate.Location = new System.Drawing.Point(336, 359);
+            this.btn_authenticate.Name = "btn_authenticate";
+            this.btn_authenticate.Size = new System.Drawing.Size(150, 47);
+            this.btn_authenticate.TabIndex = 10;
+            this.btn_authenticate.Text = "Authenticate";
+            this.btn_authenticate.UseVisualStyleBackColor = false;
+            this.btn_authenticate.Click += new System.EventHandler(this.btn_authenticate_Click);
             // 
             // richTextBox1
             // 
@@ -238,7 +253,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(825, 43);
+            this.panel3.Size = new System.Drawing.Size(830, 43);
             this.panel3.TabIndex = 5;
             // 
             // label4
@@ -263,20 +278,6 @@
             this.btn_Exit.TabIndex = 5;
             this.btn_Exit.UseVisualStyleBackColor = false;
             // 
-            // btn_authenticate
-            // 
-            this.btn_authenticate.BackColor = System.Drawing.Color.Gray;
-            this.btn_authenticate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_authenticate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_authenticate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_authenticate.Location = new System.Drawing.Point(336, 359);
-            this.btn_authenticate.Name = "btn_authenticate";
-            this.btn_authenticate.Size = new System.Drawing.Size(150, 47);
-            this.btn_authenticate.TabIndex = 10;
-            this.btn_authenticate.Text = "Authenticate";
-            this.btn_authenticate.UseVisualStyleBackColor = false;
-            this.btn_authenticate.Click += new System.EventHandler(this.btn_authenticate_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +292,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

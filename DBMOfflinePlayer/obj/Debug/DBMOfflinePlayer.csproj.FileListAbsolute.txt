@@ -52,3 +52,12 @@ D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.pd
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\DBMOfflinePlayer.exe.config
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\DBMOfflinePlayer.pdb
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.forms.AuthenticationForm.resources
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.dll
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.dll
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.EF6.dll
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.Linq.dll
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.xml
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.xml
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.dll.config

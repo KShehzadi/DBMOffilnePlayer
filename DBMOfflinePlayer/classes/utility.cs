@@ -15,6 +15,7 @@ using System.Threading;
 using WMPLib;
 using Newtonsoft;
 using System.Net.Http;
+using System.Data.SQLite;
 
 namespace DBMOfflinePlayer
 {
@@ -225,6 +226,26 @@ namespace DBMOfflinePlayer
             }
             Console.WriteLine(authstring);
             MessageBox.Show(authstring.ToString());
+        }
+        public static void createdatabase()
+        {
+            SQLiteConnection.CreateFile("C:/Users/Dc/Desktop/MyDatabase.sqlite");
+
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=C:/Users/Dc/Desktop/MyDatabase.sqlite;Version=3;");
+            m_dbConnection.Open();
+
+            string sql = "create table Auth (token varchar(100), ExpiryDate DateTime, IssueDate DateTime)";
+
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+            sql = "create table WebLectures (name varchar(50), DownloadLink varchar(100))";
+
+            command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+            sql = "create table DownloadedLectures (name varchar(50), DirectoryPath varchar(100))";
+            command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+            m_dbConnection.Close();
         }
     }
 }
