@@ -123,6 +123,7 @@
             this.btn_back.Size = new System.Drawing.Size(45, 43);
             this.btn_back.TabIndex = 11;
             this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_Exit
             // 
@@ -139,6 +140,7 @@
             this.btn_Exit.Size = new System.Drawing.Size(48, 43);
             this.btn_Exit.TabIndex = 10;
             this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // AuthenticationForm
             // 
@@ -152,7 +154,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(356, 322);
+            this.MinimumSize = new System.Drawing.Size(356, 322);
             this.Name = "AuthenticationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AuthenticationForm";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

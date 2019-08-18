@@ -44,9 +44,10 @@ namespace DBMOfflinePlayer
         {
             utility.ReadandDrawFromFileCall(ref imgbox);
         }
+        public static string audiofile = @"C:\Users\Dc\Documents\Sound recordings\komal.m4a";
         public static void playaudiofile()
         {
-            player.URL = @"C:\Users\Dc\Documents\Sound recordings\komal.m4a";
+            player.URL = audiofile;
             player.controls.play();
             thread1.Abort();
         }
@@ -60,7 +61,7 @@ namespace DBMOfflinePlayer
             drawAndWriteOnImageBox(ref dest, ref offsetX, ref offsetY);
 
         }
-        public static Image<Rgb, Byte> aa = new Image<Rgb, Byte>(919, 293);
+        public static Image<Rgb, Byte> aa = new Image<Rgb, Byte>(960, 317);
         public static Point previous1 = new Point(0, 0);
         public static void drawAndWriteOnImageBox(ref ImageBox dest, ref int x, ref int y)
         {
@@ -88,7 +89,7 @@ namespace DBMOfflinePlayer
         public static void savetofile()
         {
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(mydatalist.ToArray());
-            System.IO.File.WriteAllText(fileName, json);
+            System.IO.File.WriteAllText(textfileName, json);
         }
         public static Point previous = new Point(0, 0);
         public static void drawOnImageBox(ref ImageBox dest, ref int x, ref int y)
@@ -144,15 +145,15 @@ namespace DBMOfflinePlayer
         }
         public static Stopwatch readtime = new Stopwatch();
         //public static string filepath;
-        public static string fileName = @"C:\Users\Dc\Desktop\komal.json";
+        public static string textfileName = @"C:\Users\Dc\Desktop\komal.json";
         public static void ReadandDrawFromFile()
         {
-            aa = new Image<Rgb, Byte>(919, 293);
+            aa = new Image<Rgb, Byte>(960, 317);
             //aa = new Image<Rgb, Byte>(514, 162);
             dest.Image = aa;
             string json;
             List<mydata> mylocaldatalist = new List<mydata>();
-            using (StreamReader r = new StreamReader(fileName))
+            using (StreamReader r = new StreamReader(textfileName))
             {
                 json = r.ReadToEnd();
                 mylocaldatalist = Newtonsoft.Json.JsonConvert.DeserializeObject<List<mydata>>(json);
@@ -206,6 +207,7 @@ namespace DBMOfflinePlayer
             }
         }
         public static HttpResponseMessage authstr;
+        public static string dbfile = "";
         public static async void authenticate(string username, string password)
         {
             var client = new HttpClient();
@@ -229,9 +231,9 @@ namespace DBMOfflinePlayer
         }
         public static void createdatabase()
         {
-            SQLiteConnection.CreateFile("C:/Users/Dc/Desktop/MyDatabase.sqlite");
+            SQLiteConnection.CreateFile(utility.dbfile);
 
-            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=C:/Users/Dc/Desktop/MyDatabase.sqlite;Version=3;");
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source="+dbfile+";Version=3;");
             m_dbConnection.Open();
 
             string sql = "create table Auth (token varchar(100), ExpiryDate DateTime, IssueDate DateTime)";

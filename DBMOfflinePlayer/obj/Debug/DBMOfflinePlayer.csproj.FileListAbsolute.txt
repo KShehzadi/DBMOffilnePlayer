@@ -61,3 +61,4 @@ D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.xml
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.xml
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.dll.config
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.forms.Lectures.resources

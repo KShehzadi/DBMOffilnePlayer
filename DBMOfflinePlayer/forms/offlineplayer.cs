@@ -61,5 +61,17 @@ namespace DBMOfflinePlayer.forms
             }
 
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            forms.Lectures lecturesform = new Lectures();
+            lecturesform.Show();
+            this.Hide();
+        }
     }
 }

@@ -121,6 +121,9 @@
   <data name="398-3985101_pinterest-icon-white-png-for-kids-telefone-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\398-3985101_pinterest-icon-white-png-for-kids-telefone-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Media-Controls-Play-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Media-Controls-Play-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DBM Logo(White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DBM Logo(White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,14 +151,17 @@
   <data name="it-support-helpdesk-19-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\it-support-helpdesk-19-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee419901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.93581638153072564693431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="arrow-back-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-back-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pause-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pause-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="information-icon-white-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\information-icon-white-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3726cf14-d582-4285-86de-cf0abb476235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3726cf14-d582-4285-86de-cf0abb476235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Marker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,17 +169,14 @@
   <data name="17448" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\17448.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media-Controls-Play-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Media-Controls-Play-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="information-icon-white-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information-icon-white-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Media-Controls-Play-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Media-Controls-Play-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3726cf14-d582-4285-86de-cf0abb476235" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3726cf14-d582-4285-86de-cf0abb476235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="84942149-go-back-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\84942149-go-back-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,13 +190,13 @@
   <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pause-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Industry-Return-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Industry-Return-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee419901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.93581638153072564693431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="monochrome_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monochrome_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

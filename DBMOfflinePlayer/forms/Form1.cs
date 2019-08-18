@@ -40,10 +40,66 @@ namespace DBMOfflinePlayer
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            if (!File.Exists("C:/Users/Dc/Desktop/MyDatabase.sqlite"))
+            utility.dbfile = "C:/Users/Dc/Desktop/MyDatabase.sqlite";
+            if (!File.Exists(utility.dbfile))
             {
                 utility.createdatabase();
             }
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_contactus_Click(object sender, EventArgs e)
+        {
+
+            forms.contact contactform = new forms.contact();
+
+            contactform.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+            forms.contact contactform = new forms.contact();
+
+            contactform.Show();
+            this.Hide();
+        }
+
+        private void btn_about_Click(object sender, EventArgs e)
+        {
+
+            forms.about aboutform = new forms.about();
+            aboutform.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+            forms.about aboutform = new forms.about();
+            aboutform.Show();
+            this.Hide();
+        }
+
+        private void btn_playlist_Click(object sender, EventArgs e)
+        {
+
+            forms.Lectures lectureform = new forms.Lectures();
+            lectureform.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+            forms.Lectures lectureform = new forms.Lectures();
+            lectureform.Show();
+            this.Hide();
         }
     }
 }

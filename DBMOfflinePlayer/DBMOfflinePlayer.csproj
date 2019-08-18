@@ -106,6 +106,12 @@
     <Compile Include="forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Lectures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Lectures.Designer.cs">
+      <DependentUpon>Lectures.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\offlineplayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Lectures.resx">
+      <DependentUpon>Lectures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\offlineplayer.resx">
       <DependentUpon>offlineplayer.cs</DependentUpon>
@@ -195,6 +204,7 @@
     <Content Include="opencv_ffmpeg410.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\monochrome_large.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

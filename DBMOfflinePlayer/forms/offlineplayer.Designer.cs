@@ -31,19 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(offlineplayer));
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_path = new System.Windows.Forms.TextBox();
-            this.btn_browse = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTotalTime = new System.Windows.Forms.Label();
             this.btn_startover = new System.Windows.Forms.Button();
             this.btn_pause = new System.Windows.Forms.Button();
             this.btn_play = new System.Windows.Forms.Button();
             this.imageBoxplayer = new Emgu.CV.UI.ImageBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblCurrentTime = new System.Windows.Forms.Label();
-            this.lblTotalTime = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxplayer)).BeginInit();
             this.SuspendLayout();
@@ -52,34 +50,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 62);
+            this.label1.Location = new System.Drawing.Point(29, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(406, 18);
+            this.label1.Size = new System.Drawing.Size(133, 18);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Path of Folder Containning audio.mp3 and video.json";
+            this.label1.Text = "Name of Lecture";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // tb_path
-            // 
-            this.tb_path.BackColor = System.Drawing.Color.Silver;
-            this.tb_path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_path.Location = new System.Drawing.Point(30, 83);
-            this.tb_path.Multiline = true;
-            this.tb_path.Name = "tb_path";
-            this.tb_path.ReadOnly = true;
-            this.tb_path.Size = new System.Drawing.Size(825, 37);
-            this.tb_path.TabIndex = 7;
-            // 
-            // btn_browse
-            // 
-            this.btn_browse.BackColor = System.Drawing.Color.Transparent;
-            this.btn_browse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_browse.Location = new System.Drawing.Point(884, 83);
-            this.btn_browse.Name = "btn_browse";
-            this.btn_browse.Size = new System.Drawing.Size(108, 37);
-            this.btn_browse.TabIndex = 8;
-            this.btn_browse.Text = "Browse";
-            this.btn_browse.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -121,6 +97,7 @@
             this.btn_back.Size = new System.Drawing.Size(45, 43);
             this.btn_back.TabIndex = 11;
             this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_Exit
             // 
@@ -137,6 +114,27 @@
             this.btn_Exit.Size = new System.Drawing.Size(48, 43);
             this.btn_Exit.TabIndex = 10;
             this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(81, 432);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(12, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "/";
+            // 
+            // lblTotalTime
+            // 
+            this.lblTotalTime.AutoSize = true;
+            this.lblTotalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalTime.Location = new System.Drawing.Point(99, 432);
+            this.lblTotalTime.Name = "lblTotalTime";
+            this.lblTotalTime.Size = new System.Drawing.Size(46, 17);
+            this.lblTotalTime.TabIndex = 13;
+            this.lblTotalTime.Text = "label2";
             // 
             // btn_startover
             // 
@@ -186,21 +184,11 @@
             // imageBoxplayer
             // 
             this.imageBoxplayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.imageBoxplayer.Location = new System.Drawing.Point(32, 135);
+            this.imageBoxplayer.Location = new System.Drawing.Point(32, 100);
             this.imageBoxplayer.Name = "imageBoxplayer";
-            this.imageBoxplayer.Size = new System.Drawing.Size(960, 282);
+            this.imageBoxplayer.Size = new System.Drawing.Size(960, 317);
             this.imageBoxplayer.TabIndex = 5;
             this.imageBoxplayer.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 432);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(12, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "/";
             // 
             // lblCurrentTime
             // 
@@ -211,16 +199,6 @@
             this.lblCurrentTime.Size = new System.Drawing.Size(46, 17);
             this.lblCurrentTime.TabIndex = 14;
             this.lblCurrentTime.Text = "label3";
-            // 
-            // lblTotalTime
-            // 
-            this.lblTotalTime.AutoSize = true;
-            this.lblTotalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalTime.Location = new System.Drawing.Point(99, 432);
-            this.lblTotalTime.Name = "lblTotalTime";
-            this.lblTotalTime.Size = new System.Drawing.Size(46, 17);
-            this.lblTotalTime.TabIndex = 13;
-            this.lblTotalTime.Text = "label2";
             // 
             // offlineplayer
             // 
@@ -235,8 +213,6 @@
             this.Controls.Add(this.btn_startover);
             this.Controls.Add(this.btn_pause);
             this.Controls.Add(this.btn_play);
-            this.Controls.Add(this.btn_browse);
-            this.Controls.Add(this.tb_path);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imageBoxplayer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -258,8 +234,6 @@
 
         private Emgu.CV.UI.ImageBox imageBoxplayer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_path;
-        private System.Windows.Forms.Button btn_browse;
         private System.Windows.Forms.Button btn_play;
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Button btn_back;
@@ -268,7 +242,7 @@
         private System.Windows.Forms.Button btn_pause;
         private System.Windows.Forms.Button btn_startover;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblCurrentTime;
         private System.Windows.Forms.Label lblTotalTime;
+        private System.Windows.Forms.Label lblCurrentTime;
     }
 }

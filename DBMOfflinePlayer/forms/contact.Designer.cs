@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contact));
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_playlist = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,6 +66,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.btn_playlist);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -76,6 +80,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 497);
             this.panel1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(93, 441);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 20);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Lectures";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // btn_playlist
+            // 
+            this.btn_playlist.BackColor = System.Drawing.Color.Transparent;
+            this.btn_playlist.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.monochrome_large;
+            this.btn_playlist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_playlist.FlatAppearance.BorderSize = 0;
+            this.btn_playlist.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btn_playlist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btn_playlist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btn_playlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_playlist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_playlist.Location = new System.Drawing.Point(14, 425);
+            this.btn_playlist.Name = "btn_playlist";
+            this.btn_playlist.Size = new System.Drawing.Size(68, 54);
+            this.btn_playlist.TabIndex = 14;
+            this.btn_playlist.UseVisualStyleBackColor = false;
+            this.btn_playlist.Click += new System.EventHandler(this.btn_playlist_Click);
             // 
             // pictureBox2
             // 
@@ -94,22 +128,24 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(91, 386);
+            this.label3.Location = new System.Drawing.Point(93, 354);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "About";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(91, 279);
+            this.label2.Location = new System.Drawing.Point(91, 271);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Contact us";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -121,6 +157,7 @@
             this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_about
             // 
@@ -133,11 +170,12 @@
             this.btn_about.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btn_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_about.Location = new System.Drawing.Point(14, 370);
+            this.btn_about.Location = new System.Drawing.Point(14, 336);
             this.btn_about.Name = "btn_about";
             this.btn_about.Size = new System.Drawing.Size(68, 54);
             this.btn_about.TabIndex = 2;
             this.btn_about.UseVisualStyleBackColor = false;
+            this.btn_about.Click += new System.EventHandler(this.btn_about_Click);
             // 
             // btn_contactus
             // 
@@ -150,7 +188,7 @@
             this.btn_contactus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btn_contactus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_contactus.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_contactus.Location = new System.Drawing.Point(14, 258);
+            this.btn_contactus.Location = new System.Drawing.Point(14, 245);
             this.btn_contactus.Name = "btn_contactus";
             this.btn_contactus.Size = new System.Drawing.Size(68, 64);
             this.btn_contactus.TabIndex = 2;
@@ -159,7 +197,7 @@
             // btn_dashboard
             // 
             this.btn_dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btn_dashboard.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.kisspng_computer_icons_home_button_sign_haus_und_familienpfleger_5b3d050ee41990_9358163815307256469343;
+            this.btn_dashboard.BackgroundImage = global::DBMOfflinePlayer.Properties.Resources.kisspng_computer_icons_home_button_sign_haus_und_familienpfleger_5b3d050ee419901;
             this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_dashboard.FlatAppearance.BorderSize = 0;
             this.btn_dashboard.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
@@ -173,6 +211,7 @@
             this.btn_dashboard.TabIndex = 0;
             this.btn_dashboard.Text = "\r\n";
             this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
             // panel2
             // 
@@ -182,9 +221,9 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.Color.Snow;
-            this.panel2.Location = new System.Drawing.Point(199, 0);
+            this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(825, 497);
+            this.panel2.Size = new System.Drawing.Size(830, 497);
             this.panel2.TabIndex = 7;
             // 
             // richTextBox1
@@ -206,7 +245,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(825, 43);
+            this.panel3.Size = new System.Drawing.Size(830, 43);
             this.panel3.TabIndex = 5;
             // 
             // label4
@@ -230,6 +269,7 @@
             this.btn_Exit.Size = new System.Drawing.Size(55, 36);
             this.btn_Exit.TabIndex = 5;
             this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // contact
             // 
@@ -240,6 +280,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "contact";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "contact";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -268,5 +309,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_playlist;
     }
 }

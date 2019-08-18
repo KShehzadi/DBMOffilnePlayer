@@ -314,6 +314,16 @@ namespace DBMOfflinePlayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap monochrome_large {
+            get {
+                object obj = ResourceManager.GetObject("monochrome_large", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause_icon {
             get {
                 object obj = ResourceManager.GetObject("pause-icon", resourceCulture);

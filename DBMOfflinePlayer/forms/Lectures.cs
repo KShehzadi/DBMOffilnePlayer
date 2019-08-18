@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DBMOfflinePlayer.forms
 {
-    public partial class contact : Form
+    public partial class Lectures : Form
     {
-        public contact()
+        public Lectures()
         {
             InitializeComponent();
         }
@@ -32,6 +32,20 @@ namespace DBMOfflinePlayer.forms
         private void label2_Click(object sender, EventArgs e)
         {
 
+            forms.contact contactform = new contact();
+
+            contactform.Show();
+            this.Hide();
+
+        }
+
+        private void btn_contactus_Click(object sender, EventArgs e)
+        {
+
+            forms.contact contactform = new contact();
+
+            contactform.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,11 +57,11 @@ namespace DBMOfflinePlayer.forms
 
         private void btn_about_Click(object sender, EventArgs e)
         {
+
             forms.about aboutform = new about();
             aboutform.Show();
             this.Hide();
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -56,19 +70,12 @@ namespace DBMOfflinePlayer.forms
             this.Hide();
         }
 
-        private void btn_playlist_Click(object sender, EventArgs e)
+        private void btn_lectureplayer_Click(object sender, EventArgs e)
         {
-            forms.Lectures lectureform = new Lectures();
-            lectureform.Show();
+            offlineplayer playerform = new offlineplayer();
+            playerform.Show();
             this.Hide();
         }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-            forms.Lectures lectureform = new Lectures();
-            lectureform.Show();
-            this.Hide();
-        }
+        
     }
 }
