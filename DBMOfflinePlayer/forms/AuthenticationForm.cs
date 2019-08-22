@@ -19,7 +19,23 @@ namespace DBMOfflinePlayer.forms
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            utility.authenticate(txt_username.Text, txt_password.Text);
+            btn_login.Enabled = false;
+            if (utility.CheckForInternetConnection())
+            {
+                utility.authenticate(txt_username.Text, txt_password.Text);
+                if (utility.authenticated == true)
+                {
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Check for Internet Connectivity.");
+            }
+            btn_login.Enabled = true;
+            
             
            
         }

@@ -16,6 +16,11 @@ namespace DBMOfflinePlayer
     {
         public Dashboard()
         {
+            utility.dbfile = "D:\\offlineplayer\\DBMOffilnePlayer\\DBMOfflinePlayer\\bin\\MyDatabase.sqlite";
+            if (!File.Exists(utility.dbfile))
+            {
+                utility.createdatabase();
+            }
             InitializeComponent();
         }
 
@@ -28,9 +33,17 @@ namespace DBMOfflinePlayer
 
         private void btn_authenticate_Click(object sender, EventArgs e)
         {
-            forms.AuthenticationForm authform = new forms.AuthenticationForm();
-            authform.Show();
-            this.Hide();
+            if(utility.CheckForInternetConnection())
+            {
+                forms.AuthenticationForm authform = new forms.AuthenticationForm();
+                authform.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("No Internet Connection :(");
+            }
+           
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -40,7 +53,7 @@ namespace DBMOfflinePlayer
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            utility.dbfile = "C:/Users/Dc/Desktop/MyDatabase.sqlite";
+            utility.dbfile = "D:\\offlineplayer\\DBMOffilnePlayer\\DBMOfflinePlayer\\bin\\MyDatabase.sqlite";
             if (!File.Exists(utility.dbfile))
             {
                 utility.createdatabase();

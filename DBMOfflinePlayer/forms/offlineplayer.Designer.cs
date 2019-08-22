@@ -42,6 +42,7 @@
             this.btn_play = new System.Windows.Forms.Button();
             this.imageBoxplayer = new Emgu.CV.UI.ImageBox();
             this.lblCurrentTime = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxplayer)).BeginInit();
             this.SuspendLayout();
@@ -120,7 +121,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 432);
+            this.label2.Location = new System.Drawing.Point(137, 432);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(12, 17);
             this.label2.TabIndex = 13;
@@ -130,11 +131,11 @@
             // 
             this.lblTotalTime.AutoSize = true;
             this.lblTotalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalTime.Location = new System.Drawing.Point(99, 432);
+            this.lblTotalTime.Location = new System.Drawing.Point(174, 432);
             this.lblTotalTime.Name = "lblTotalTime";
-            this.lblTotalTime.Size = new System.Drawing.Size(46, 17);
+            this.lblTotalTime.Size = new System.Drawing.Size(75, 17);
             this.lblTotalTime.TabIndex = 13;
-            this.lblTotalTime.Text = "label2";
+            this.lblTotalTime.Text = "Total Time";
             // 
             // btn_startover
             // 
@@ -194,11 +195,18 @@
             // 
             this.lblCurrentTime.AutoSize = true;
             this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTime.Location = new System.Drawing.Point(29, 432);
+            this.lblCurrentTime.Location = new System.Drawing.Point(31, 432);
             this.lblCurrentTime.Name = "lblCurrentTime";
-            this.lblCurrentTime.Size = new System.Drawing.Size(46, 17);
+            this.lblCurrentTime.Size = new System.Drawing.Size(93, 17);
             this.lblCurrentTime.TabIndex = 14;
-            this.lblCurrentTime.Text = "label3";
+            this.lblCurrentTime.Text = "Cuurent Time";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(32, 419);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(960, 10);
+            this.progressBar1.TabIndex = 15;
             // 
             // offlineplayer
             // 
@@ -206,6 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1024, 497);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lblCurrentTime);
             this.Controls.Add(this.lblTotalTime);
             this.Controls.Add(this.label2);
@@ -244,5 +253,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTotalTime;
         private System.Windows.Forms.Label lblCurrentTime;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

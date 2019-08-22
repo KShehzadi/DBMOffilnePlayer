@@ -29,19 +29,39 @@ namespace DBMOfflinePlayer.forms
         {
             btn_pause.Enabled = true;
             btn_play.Enabled = false;
-            utility.ReadandDrawFromFileCall(ref imageBoxplayer);
+            btn_startover.Enabled = true;
+
+
+            System.Threading.Thread.Sleep(100);
+
+            utility.ReadandDrawFromFileCall(ref imageBoxplayer, ref lblCurrentTime,this);
             btn_play.Enabled = true;
         }
 
         private void offlineplayer_Load(object sender, EventArgs e)
         {
+            lblTotalTime.Text = utility.getTotalVideoDuration().ToString();
             btn_pause.Enabled = false;
+            btn_startover.Enabled = false;
         }
+        private double SetProgressBarValue(double MousePosition)
+        {
+            progressBar1.Value = progressBar1.Minimum;
+            double ratio = MousePosition / progressBar1.Width;
+            double ProgressBarValue = ratio * progressBar1.Maximum;
+
+            return ProgressBarValue;
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            btn_pause.Enabled = true;
             btn_play.Enabled = false;
+            btn_pause.Enabled = true;
+           
+
+            System.Threading.Thread.Sleep(100);
+
             utility.startover(ref imageBoxplayer);
             btn_play.Enabled = true;
         }
