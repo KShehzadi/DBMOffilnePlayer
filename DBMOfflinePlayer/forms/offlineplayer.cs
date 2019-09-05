@@ -41,17 +41,18 @@ namespace DBMOfflinePlayer.forms
         private void offlineplayer_Load(object sender, EventArgs e)
         {
             lblTotalTime.Text = utility.getTotalVideoDuration().ToString();
-            btn_pause.Enabled = false;
-            btn_startover.Enabled = false;
-        }
-        private double SetProgressBarValue(double MousePosition)
-        {
-            progressBar1.Value = progressBar1.Minimum;
-            double ratio = MousePosition / progressBar1.Width;
-            double ProgressBarValue = ratio * progressBar1.Maximum;
+           
+            btn_pause.Enabled = true;
+            btn_play.Enabled = false;
+            btn_startover.Enabled = true;
 
-            return ProgressBarValue;
+
+            System.Threading.Thread.Sleep(100);
+
+            utility.ReadandDrawFromFileCall(ref imageBoxplayer, ref lblCurrentTime, this);
+            btn_play.Enabled = true;
         }
+       
 
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,6 +72,10 @@ namespace DBMOfflinePlayer.forms
             btn_play.Enabled = false;
             if(btn_pause.Text.ToLower() == "pause")
             {
+                if(utility.thread1.ThreadState == System.Threading.ThreadState.Running)
+                {
+
+                }
                 btn_pause.Text = "Resume";
                 utility.pausevideo();
             }
@@ -81,7 +86,7 @@ namespace DBMOfflinePlayer.forms
             }
 
         }
-
+        
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -92,6 +97,17 @@ namespace DBMOfflinePlayer.forms
             forms.Lectures lecturesform = new Lectures();
             lecturesform.Show();
             this.Hide();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            int i = trackBar1.Value;
+            float fraction = ((float)(i)) / ((float)(trackBar1.Maximum));
+            Console.WriteLine(fraction);
+            double totaltime = utility.getTotalVideoDuration();
+            double currentTime = totaltime * fraction;
+            Console.WriteLine(currentTime);
+            utility.ReadandDrawFromFileOnSpecificTimeCall(ref imageBoxplayer,ref lblCurrentTime, this,currentTime,ref trackBar1);
         }
     }
 }

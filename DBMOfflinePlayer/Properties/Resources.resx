@@ -118,53 +118,92 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="398-3985101_pinterest-icon-white-png-for-kids-telefone-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\398-3985101_pinterest-icon-white-png-for-kids-telefone-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Media-Controls-Play-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Media-Controls-Play-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DBM Logo(White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DBM Logo(White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="house-1-featured-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\house-1-featured-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="84942149-stock-vector-go-back-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\84942149-stock-vector-go-back-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="84942149-go-back-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\84942149-go-back-icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="monochrome_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monochrome_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Industry-Return-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Industry-Return-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Media-Controls-Play-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Media-Controls-Play-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a6508e565d25ab01f79a35c4319e0083-play-button-flat-icon-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a6508e565d25ab01f79a35c4319e0083-play-button-flat-icon-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pauseicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pauseicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="84942149-go-back-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\84942149-go-back-icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playbutton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Media-Controls-Repeat-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Media-Controls-Repeat-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-call-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-call-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media-Controls-Play-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Media-Controls-Play-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DBM Logo(Black)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DBM Logo(Black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="it-support-helpdesk-19-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\it-support-helpdesk-19-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="playicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playicon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee419901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.93581638153072564693431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="398-3985101_pinterest-icon-white-png-for-kids-telefone-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\398-3985101_pinterest-icon-white-png-for-kids-telefone-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBM Logo(Black)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBM Logo(Black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Industry-Return-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Industry-Return-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="house-1-featured-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\house-1-featured-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="startovericon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\startovericon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-call-center" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-call-center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="84942149-go-back-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\84942149-go-back-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBM Logo(White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBM Logo(White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-back-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-back-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3726cf14-d582-4285-86de-cf0abb476235" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3726cf14-d582-4285-86de-cf0abb476235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="84942149-stock-vector-go-back-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\84942149-stock-vector-go-back-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Marker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Marker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="it-support-helpdesk-19-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\it-support-helpdesk-19-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="17448" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\17448.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,31 +211,13 @@
   <data name="information-icon-white-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information-icon-white-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media-Controls-Play-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Media-Controls-Play-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="84942149-go-back-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\84942149-go-back-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-computer-icons-home-button-sign-haus-und-familienpfleger-5b3d050ee41990.9358163815307256469343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pause-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pause-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Industry-Return-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Industry-Return-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3726cf14-d582-4285-86de-cf0abb476235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3726cf14-d582-4285-86de-cf0abb476235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="monochrome_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monochrome_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

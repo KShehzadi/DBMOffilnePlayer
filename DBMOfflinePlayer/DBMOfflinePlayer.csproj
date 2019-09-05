@@ -82,6 +82,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\StopWatchWithOffset.cs" />
     <Compile Include="forms\about.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +206,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\monochrome_large.png" />
+    <None Include="Resources\startovericon.png" />
+    <None Include="Resources\playbutton.png" />
+    <None Include="Resources\playicon.jpg" />
+    <None Include="Resources\playbutton1.png" />
+    <None Include="Resources\pauseicon2.png" />
+    <None Include="Resources\a6508e565d25ab01f79a35c4319e0083-play-button-flat-icon-by-vexels.png" />
+    <None Include="Resources\pause.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

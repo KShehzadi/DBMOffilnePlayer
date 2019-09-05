@@ -123,6 +123,16 @@ namespace DBMOfflinePlayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap a6508e565d25ab01f79a35c4319e0083_play_button_flat_icon_by_vexels {
+            get {
+                object obj = ResourceManager.GetObject("a6508e565d25ab01f79a35c4319e0083-play-button-flat-icon-by-vexels", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_back_512 {
             get {
                 object obj = ResourceManager.GetObject("arrow-back-512", resourceCulture);
@@ -324,9 +334,69 @@ namespace DBMOfflinePlayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pause {
+            get {
+                object obj = ResourceManager.GetObject("pause", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause_icon {
             get {
                 object obj = ResourceManager.GetObject("pause-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pauseicon2 {
+            get {
+                object obj = ResourceManager.GetObject("pauseicon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playbutton {
+            get {
+                object obj = ResourceManager.GetObject("playbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playbutton1 {
+            get {
+                object obj = ResourceManager.GetObject("playbutton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap playicon {
+            get {
+                object obj = ResourceManager.GetObject("playicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap startovericon {
+            get {
+                object obj = ResourceManager.GetObject("startovericon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

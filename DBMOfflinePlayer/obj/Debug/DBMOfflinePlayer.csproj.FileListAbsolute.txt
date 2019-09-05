@@ -49,7 +49,6 @@ D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\EntityFramework.Sql
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\Newtonsoft.Json.xml
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.xml
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\bin\Debug\System.Data.SQLite.dll.config
-D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.csprojAssemblyReference.cache
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.forms.about.resources
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.forms.AuthenticationForm.resources
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.forms.contact.resources
@@ -62,3 +61,4 @@ D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.cs
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.csproj.CopyComplete
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.exe
 D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.pdb
+D:\offlineplayer\DBMOffilnePlayer\DBMOfflinePlayer\obj\Debug\DBMOfflinePlayer.csprojAssemblyReference.cache

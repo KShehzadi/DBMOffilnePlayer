@@ -20,6 +20,8 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Security.Cryptography;
 using System.Runtime.InteropServices;
+using DBMOfflinePlayer.classes;
+
 namespace DBMOfflinePlayer
 {
     class utility
@@ -32,16 +34,36 @@ namespace DBMOfflinePlayer
         }
         public static void pausevideo()
         {
-            thread1.Suspend();
-            thread2.Suspend();
+            if(thread1.ThreadState == System.Threading.ThreadState.Running && thread2.ThreadState == System.Threading.ThreadState.Running)
+            {
+                thread1.Suspend();
+                thread2.Suspend();
+            }
+            else
+            {
+                thread2.Suspend();
+            }
+            
         }
         public static void startpausedvideo(ref ImageBox imgbox)
         {
-            dest = imgbox;
-            thread1 = new Thread(utility.playaudiofile);
-            thread2 = new Thread(utility.ReadandDrawFromFile);
-            thread1.Start();
-            thread2.Start();
+            if(thread1.ThreadState == System.Threading.ThreadState.Suspended && thread2.ThreadState == System.Threading.ThreadState.Suspended)
+            {
+                thread1.Resume();
+                thread2.Resume();
+            }
+            else
+            {
+                thread2.Resume();
+            }
+
+
+            //dest = imgbox;
+            //thread1 = new Thread(utility.playaudiofile);
+            //thread2 = new Thread(utility.ReadandDrawFromFile);
+            //thread1.Start();
+            //thread2.Start();
+
         }
         public static void startover(ref ImageBox imgbox)
         {
@@ -64,7 +86,7 @@ namespace DBMOfflinePlayer
             drawAndWriteOnImageBox(ref dest, ref offsetX, ref offsetY);
 
         }
-        public static Image<Rgb, Byte> aa = new Image<Rgb, Byte>(960, 317);
+        public static Image<Rgb, Byte> aa = new Image<Rgb, Byte>(1024, 370);
         public static Point previous1 = new Point(0, 0);
         public static void drawAndWriteOnImageBox(ref ImageBox dest, ref int x, ref int y)
         {
@@ -86,7 +108,7 @@ namespace DBMOfflinePlayer
         {
             public int x;
             public int y;
-            public int time;
+            public double time;
         }
         public class authdata
         {
@@ -139,6 +161,7 @@ namespace DBMOfflinePlayer
             if (thread1.ThreadState == System.Threading.ThreadState.Aborted && thread2.ThreadState == System.Threading.ThreadState.Aborted)
             {
                 thread1 = new Thread(utility.playaudiofile);
+
                 thread2 = new Thread(utility.ReadandDrawFromFile);
                 thread1.Start();
                 thread2.Start();
@@ -157,7 +180,9 @@ namespace DBMOfflinePlayer
             }
             else
             {
+
                 thread1 = new Thread(utility.playaudiofile);
+
                 thread2 = new Thread(utility.ReadandDrawFromFile);
                 thread1.Start();
                 thread2.Start();
@@ -168,13 +193,14 @@ namespace DBMOfflinePlayer
         public static Stopwatch readtime = new Stopwatch();
         //public static string filepath;
         public static string textfileName = @"C:\Users\Dc\Desktop\komal.json";
+        public static List<mydata> mylocaldatalist = new List<mydata>();
         public static void ReadandDrawFromFile()
         {
-            aa = new Image<Rgb, Byte>(960, 317);
+            aa = new Image<Rgb, Byte>(1024, 370);
             //aa = new Image<Rgb, Byte>(514, 162);
             dest.Image = aa;
             string json;
-            List<mydata> mylocaldatalist = new List<mydata>();
+            
             using (StreamReader r = new StreamReader(textfileName))
             {
                 json = r.ReadToEnd();
@@ -201,6 +227,78 @@ namespace DBMOfflinePlayer
             utility.previous = new Point(0, 0);
             utility.previous1 = new Point(0, 0);
             thread2.Abort();
+        }
+        public static double trackbartime;
+        public static TrackBar trackbar = new TrackBar();
+        public static Thread videothread = new Thread(utility.ReadandDrawFromFileonSpecificTime);
+        public static void ReadandDrawFromFileOnSpecificTimeCall(ref ImageBox imgbox, ref Label cTime, forms.offlineplayer form1, double time, ref TrackBar tr)
+        {
+            
+            myform = form1;
+            dest = imgbox;
+            currentTime = cTime;
+            trackbartime = time;
+            trackbar = tr;
+            utility.previous = new Point(0, 0);
+            utility.previous1 = new Point(0, 0);
+            if (thread1.ThreadState == System.Threading.ThreadState.Aborted && thread2.ThreadState == System.Threading.ThreadState.Aborted)
+            {
+               
+            }
+            else if (thread1.ThreadState == System.Threading.ThreadState.Aborted)
+            {
+              
+                thread2.Abort();
+            }
+            else if (thread2.ThreadState == System.Threading.ThreadState.Aborted)
+            {
+               
+                thread2.Abort();
+            }
+            else
+            {
+
+                thread1.Abort();
+                thread2.Abort();
+
+            }
+            if(utility.videothread.ThreadState == System.Threading.ThreadState.Running || utility.videothread.ThreadState != System.Threading.ThreadState.Aborted)
+            {
+                utility.videothread.Abort();
+                utility.videothread = new Thread(utility.ReadandDrawFromFileonSpecificTime);
+            }
+            utility.videothread.Start();
+        }
+        public static void ReadandDrawFromFileonSpecificTime()
+        {
+            double time = utility.trackbartime;
+            aa = new Image<Rgb, Byte>(1024, 370);
+            //aa = new Image<Rgb, Byte>(514, 162);
+            dest.Image = aa;
+            
+            double counter = mylocaldatalist[mylocaldatalist.Count() - 1].time;
+            int x, y;
+            double timeinmiliseconds = time * 1000;
+            var offsetTimeStamp = TimeSpan.FromMilliseconds(timeinmiliseconds);
+            var watch = new StopWatchWithOffset(offsetTimeStamp);
+            watch.Start();
+            while (watch.ElapsedTimeSpan.TotalMilliseconds <= counter)
+            {
+                double times = watch.ElapsedTimeSpan.TotalMilliseconds;
+                double seconds = Math.Ceiling(times / 1000);
+                utility.setCurrentTime(ref currentTime, ref seconds);
+                if (mylocaldatalist.Any(t => t.time == Math.Ceiling(times)))
+                {
+                    x = mylocaldatalist.Find(t1 => t1.time == Math.Ceiling(times)).x;
+                    y = mylocaldatalist.Find(t2 => t2.time == Math.Ceiling(times)).y;
+                    drawOnImageBox(ref dest, ref x, ref y);
+                }
+            }
+
+            Console.WriteLine("Finished");
+            utility.previous = new Point(0, 0);
+            utility.previous1 = new Point(0, 0);
+            
         }
         public static void setCurrentTime(ref Label label,ref double time)
         {
