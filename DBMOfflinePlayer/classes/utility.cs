@@ -68,6 +68,7 @@ namespace DBMOfflinePlayer
         public static void startover(ref ImageBox imgbox)
         {
             Console.WriteLine("sample for hacktoberfest");
+            Console.WriteLine("sample for hacktoberfest2");
             utility.ReadandDrawFromFileCall(ref imgbox,ref  utility.currentTime,utility.myform);
         }
         public static string audiofile = @"C:\Users\Dc\Documents\Sound recordings\komal.m4a";
